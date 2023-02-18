@@ -1,16 +1,14 @@
-let menu_j = document.querySelector("#list");
-let openButton = document.querySelector("#ham-menu");
-let alink = document.querySelector(".link");
+let hamMenuIcon = document.getElementById("ham-menu");
+let navBar = document.getElementById("nav-bar");
+let navLinks = navBar.querySelectorAll("li");
 
-
- openButton.addEventListener("click", () => {
-   menu_j.classList.toggle("active");
-   openButton.classList.toggle("fa-times");
- });
-
- alink.forEach((alink) => {
-   alink.addEventListener("click", () => {
-     menu_j.classList.remove("active");
-     openButton.classList.toggle("fa-times");
-   });
- });
+hamMenuIcon.addEventListener("click", () => {
+  navBar.classList.toggle("active");
+  hamMenuIcon.classList.toggle("fa-times");
+});
+navLinks.forEach((navLinks) => {
+  navLinks.addEventListener("click", () => {
+    navBar.classList.remove("active");
+    hamMenuIcon.classList.toggle("fa-times");
+  });
+});

@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
-    <!-- style css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- font awsame -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-</head>
-<body>
- <main>
-    <!-- navbar -->
-    <nav class="contianer nav__container">
-        <div class="rigt__nav">Logo</div> 
-        <div class="left__nav">
-            <i class="fa-solid fa-bars" id="ham-menu"></i>
-            <ul id="list" class="menu">
-                <li><a class="link"  href="#">HOME</a></li>
-                <li class="link_r" >ABOUT
-                    <ul class="list">
-                        <li><a class="link" href="#">name</a></li>
-                        <li><a class="link" href="">age</a></li>
-                        <li><a class="link" href="">phote</a></li>
-                        <li><a class="link" href="">are</a></li>
-                    </ul>
-                </li>
-                <li><a  class="link" href="#">CONTACT</a></li>
-            </ul>
-
-    </nav>
- </main>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
- <script src="main.js"></script>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Bar</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#home" id="logo">Site Logo</a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#team">Team</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <h1>Home Section</h1>
+    </section>
+    <!-- Script -->
+    <script src="main.js"></script>
+  </body>
 </html>
